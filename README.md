@@ -19,7 +19,9 @@
 ***
 
 - ### _A partir de agora todo código que eu for começar a desenvolver eu irei disponibilizar aqui para todos_
-
+  
+  [- Lista com status dos bot's](bots/Bots%20Disponiveis.md)
+  
 - ### **Irei tentar(também não sei tudo) fazer revisão de códigos:**
     + Para tentar resolver algum erro ou implementar alguma funcionalidade!
     + Não colocarei de forma alguma algum tipo de controle de licensa!
