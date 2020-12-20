@@ -18,9 +18,9 @@
 ***
 ***
 
-- ### _A partir de agora todo código que eu for começar a desenvolver eu irei disponibilizar para todos aqui_
+- ### _A partir de agora todo código que eu for começar a desenvolver eu irei disponibilizar aqui para todos_
 
-- ### **Irei tentar(também não sei tudo) fazer revisão código:**
+- ### **Irei tentar(também não sei tudo) fazer revisão de códigos:**
     + Para tentar resolver algum erro ou implementar alguma funcionalidade!
     + Não colocarei de forma alguma algum tipo de controle de licensa!
     + Não irei criar ou trabalhar com nenhum tipo de interface visual, apenas scripts!
