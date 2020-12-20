@@ -1,20 +1,24 @@
 # __IQ_BOTs__
+
 <br />
 
-<p style="text-align: center">Se deu valor, doe se puder!</p>
+
 <div style="text-align: center">
+  <p>Se deu valor, doe se puder!</p>
   <a href="http://bit.ly/3cdOSu2">
     <img alt="Doe clicando aqui" src="imgs/donate_paypal.png">
   </a>
-  <p style="text-align: center">Total doado R$ 0</p>
+  <p>Total doado R$ 0</p>
 </div>
 
 ***
 ***
+
 ## __Não siga em diante sem ler isso primeiro!!!__
 
 ***
 ***
+
 - ### _A partir de agora todo código que eu for começar a desenvolver eu irei disponibilizar para todos aqui_
 
 - ### **Irei tentar(também não sei tudo) fazer revisão código:**
@@ -22,8 +26,7 @@
     + Não colocarei de forma alguma algum tipo de controle de licensa!
     + Não irei criar ou trabalhar com nenhum tipo de interface visual, apenas scripts!
 
-
->_Dito isso irei aceitar que me enviem o código no privado (___Telegram___ [@poolals](http://bit.ly/3h2C4ZU), mas podem ter certeza caso eu julgue a ideia nova/boa/útil e que ajude os demais membros do grupo de qualquer forma, este será disponibilizado neste local, com ou sem permissão do mesmo!_
+> _Dito isso irei aceitar que me enviem o código no privado (___Telegram___ [@poolals](http://bit.ly/3h2C4ZU), mas podem ter certeza caso eu julgue a ideia nova/boa/útil e que ajude os demais membros do grupo de qualquer forma, este será disponibilizado neste local, com ou sem permissão do mesmo!_
 
 - ### **Lembre-se isso é um trabalho / hobby voluntário, logo:**
     + _Sem promessa ou obrigação de o faze-lo._
@@ -34,13 +37,14 @@
 ***
 
 # __Assistam os vídeos do canal__
+
 <div style="text-align: center">
   <a href="https://bit.ly/2EgL0Mk">
     <img alt="IQ Coding" src="imgs/iq_coding.png">
   </a>
 </div>
 
-Junte-se ao [grupo no telegram (IQ Coding)](https://bit.ly/3hMMcVE) , mas não esqueçam de ler as regras!
+Junte-se ao [grupo (IQ Coding) no telegram](https://bit.ly/3hMMcVE) , mas não esqueçam de ler as regras!
 
 ***
 ***
