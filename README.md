@@ -8,7 +8,7 @@
     <img alt="Doe clicando aqui" src="imgs/donate_paypal.png">
   </a>
 </p>
-<p align="center">Total doado R$ 0</p>
+<p align="center">Total doado R$ 10,00</p>
 
 ***
 ***
