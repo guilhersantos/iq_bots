@@ -2,14 +2,13 @@
 
 <br />
 
-
-<div style="text-align: center">
-  <p>Se deu valor, doe se puder!</p>
+<p align="center">Se deu valor, doe se puder!</p>
+<p align="center">
   <a href="http://bit.ly/3cdOSu2">
     <img alt="Doe clicando aqui" src="imgs/donate_paypal.png">
   </a>
-  <p>Total doado R$ 0</p>
-</div>
+</p>
+<p align="center">Total doado R$ 0</p>
 
 ***
 ***
@@ -38,11 +37,11 @@
 
 # __Assistam os vídeos do canal__
 
-<div style="text-align: center">
+<p align="center">
   <a href="https://bit.ly/2EgL0Mk">
     <img alt="IQ Coding" src="imgs/iq_coding.png">
   </a>
-</div>
+</p>
 
 Junte-se ao [grupo (IQ Coding) no telegram](https://bit.ly/3hMMcVE) , mas não esqueçam de ler as regras!
 
