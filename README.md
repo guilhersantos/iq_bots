@@ -45,6 +45,8 @@
 
 Junte-se ao [grupo (IQ Coding) no telegram](https://bit.ly/3hMMcVE) , mas não esqueçam de ler as regras!
 
+>_Dica: Procure os ADM's caso tenha interesse nos grupos VIP's!_
+
 ***
 ***
 
