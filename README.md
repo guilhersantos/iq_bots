@@ -6,8 +6,8 @@
 <p align="center">
   <a href="http://bit.ly/3cdOSu2">
     <img alt="Doe clicando aqui" src="imgs/donate_paypal.png">
-  </a>
-  <img src="imgs/github_pix.png">
+  </a></br>
+  <img src="imgs/github_pix.png" alt="pix" height="222" width="175">
 </p>
 <p align="center">Total doado R$ 10,00</p>
 
