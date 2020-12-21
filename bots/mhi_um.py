@@ -122,12 +122,12 @@ def executar_entrada(_iq: IQ_Option, _pariedade: str, _tipo_pariedade: str, _dir
     if quantidade_martigale_executado == -1:
         print(f">>>>>>>>>>>>>>> Executando {'compra' if _direcao.upper() == 'CALL' else 'venda'} "
               f"{'em digital,' if _tipo_pariedade.upper() == 'DIGITAL' else 'em binaria,'} "
-              f"moeda {_pariedade} no valor de {format_currency_value(currency_account, _valor_entrada_atual)}, as {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
+              f"moeda {_pariedade} no valor de {format_currency_value(currency_account, _valor_entrada_atual)}, em {datetime.now().strftime('%d/%m/%Y as %H:%M:%S')}")
     else:
         print(f">>>>>>>>>>>>>>> Executando {'compra' if _direcao.upper() == 'CALL' else 'venda'} "
               f"{'em digital,' if _tipo_pariedade.upper() == 'DIGITAL' else 'em binaria,'} "
               f"moeda {_pariedade} no valor de {format_currency_value(currency_account, _valor_entrada_atual)}, Martingale nível: {_quantidade_martigale_executado + 1}, "
-              f"as {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
+              f"em {datetime.now().strftime('%d/%m/%Y as %H:%M:%S')}")
 
     if status:
         print(f">>>>>>>>>>>>>>> Aguardando resultado da operação")
