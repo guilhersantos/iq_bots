@@ -7,11 +7,11 @@
 
 ## 1 - *Estratégias MHI*
 
-| Nome                | Status              | Timeframe   | Funcionalidades |
-|:--------------------|:--------------------|:-----------:| --------------- |
-| [MHI UM](#mhi1)     | Em desenvolvimento  | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      |
-| [MHI DOIS](#mhi2)   |                     | M1          | Martingale      |
-| [MHI TRES](#mhi3)   |                     | M1          | Martingale      |
+| Nome                | Status              | Timeframe   | Funcionalidades                                               |
+|:--------------------|:--------------------|:-----------:| ------------------------------------------------------------- |
+| [MHI UM](#mhi1)     | Aguardando testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      |
+| [MHI DOIS](#mhi2)   |                     | M1          | Martingale                                                    |
+| [MHI TRES](#mhi3)   |                     | M1          | Martingale                                                    |
 
 <div id="mhi1"/>
 
