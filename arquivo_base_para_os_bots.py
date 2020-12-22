@@ -7,9 +7,10 @@ import time
 from iqoptionapi.stable_api import IQ_Option
 
 
-def verificar_se_fez_a_conexao(_iq, _account_type='PRACTICE'):
+def verificar_se_fez_a_conexao(_iq: IQ_Option, _account_type: str = 'PRACTICE') -> bool:
     check, reason = _iq.connect()
     error_password = """{"code":"invalid_credentials","message":"You entered the wrong credentials. Please check that the login/password is correct."}"""
+    requests_limit_exceeded = """{"code":"requests_limit_exceeded","message":"The number of requests has been exceeded. Try again in 10 minutes.","ttl":600}"""
     if check:
         print("Start your application")
         _iq.change_balance(_account_type)
@@ -19,6 +20,9 @@ def verificar_se_fez_a_conexao(_iq, _account_type='PRACTICE'):
             print("No Network")
         elif reason == error_password:
             error_message = ast.literal_eval(error_password)
+            print(error_message['message'])
+        elif reason == requests_limit_exceeded:
+            error_message = ast.literal_eval(requests_limit_exceeded)
             print(error_message['message'])
 
     print("Finishing application, check your data and try again.")

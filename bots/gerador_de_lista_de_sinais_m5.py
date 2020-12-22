@@ -48,12 +48,13 @@ account_type = 'PRACTICE'
 
 # Aqui começa a configuração da API, não alterar
 #:===============================================================:#
-iq = IQ_Option()
+iq = IQ_Option(login, password)
 if not verificar_se_fez_a_conexao(iq, account_type):
     sys.exit(0)
 
 currency_account = iq.get_currency()
 account_balance = iq.get_balance()
+DATE_TIME_FORMAT = '%Y-%m-%d %H:%M'
 
 print('#:===============================================================:#')
 print(f"This is your API version {IQ_Option.__version__}")
@@ -64,10 +65,9 @@ print('#:==============================================================:#')
 
 # Aqui você faz as configurações do BOT
 #:===============================================================:#
-DATE_TIME_FORMAT = '%Y-%m-%d %H:%M'
 pariedades = ['EURUSD', 'AUDCAD']
 quantidade_dias = 2
-quantidade_martigale = 2
+filtro_percentual = 80
 
 
 def timestamp_converter(_timestamp: int) -> str:
@@ -133,7 +133,7 @@ list_catalog = new_df.values.tolist()
 
 with open('lista_sinais.txt', 'a', encoding='utf-8') as file:
     for item in list_catalog:
-        if item[2] > 80:
+        if item[2] > filtro_percentual:
             file.write(item[0] + ';' + item[1] + ';' + 'CALL\n')
-        if item[3] > 80:
+        if item[3] > filtro_percentual:
             file.write(item[0] + ';' + item[1] + ';' + 'PUT\n')
