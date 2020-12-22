@@ -66,7 +66,7 @@ print('#:==============================================================:#')
 # Aqui você faz as configurações do BOT
 #:===============================================================:#
 pariedades = ['EURUSD', 'AUDCAD']
-quantidade_dias = 2
+quantidade_dias = 3
 filtro_percentual = 80
 
 
@@ -89,6 +89,12 @@ def adjust_catalog(_pariedade: str, _candle: dict) -> dict:
         'doji': 1 if get_color_candle(_candle) == 'D' else 0
     }
 
+
+if quantidade_dias < 15:
+    quantidade_dias = 15
+
+print(f"Baseada em {quantidade_dias} dias e separando probabilidades de {filtro_percentual}%")
+print("Iniciando a geração de lista de sinais, aguarde >>>>>>>>>>>>>>>")
 
 catalogacao = []
 for pariedade in pariedades:
@@ -131,9 +137,13 @@ new_df = sum_df[['pariedade', 'hora', 'green_percent', 'red_percent', 'doji_perc
 new_df = new_df.sort_values(by='hora')
 list_catalog = new_df.values.tolist()
 
-with open('lista_sinais.txt', 'a', encoding='utf-8') as file:
+nome_do_arquivo = f"lista_sinais_{datetime.now().strftime('%Y_%m_%d')}.txt"
+sparador = ';'
+with open(nome_do_arquivo, 'a', encoding='utf-8') as file:
     for item in list_catalog:
         if item[2] > filtro_percentual:
-            file.write(item[0] + ';' + item[1] + ';' + 'CALL\n')
+            file.write(item[0] + sparador + item[1] + sparador + 'CALL\n')
         if item[3] > filtro_percentual:
-            file.write(item[0] + ';' + item[1] + ';' + 'PUT\n')
+            file.write(item[0] + sparador + item[1] + sparador + 'PUT\n')
+
+print(f"Finalizando a geração de lista de sinais {nome_do_arquivo}")
