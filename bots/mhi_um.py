@@ -174,3 +174,4 @@ while not verificar_stops(stop_loss, stop_win, lucro_atual, valor_entrada_atual)
                 break
     else:
         print(">>>>>>>>>>>>>>> Pulando entrada atual, alto risco de LOSS")
+        time.sleep(5)
