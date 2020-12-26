@@ -1,23 +1,21 @@
-# IQ_BOTs
+## IQ_BOTs
 
 ***
 ***
 
-## *Atenção
-
+## *Atenção, não siga em diante sem ler isso primeiro!!!
 ***
-***
-
-### Não siga em diante sem ler isso primeiro!!!
-
-[Click aqui](docs/index.html)
 ***
 
 * A partir de agora todo código que eu for começar a desenvolver eu irei disponibilizar aqui para todos 100% de grátis!
+
+
 * Irei tentar(também não sei tudo né) fazer revisão de códigos:
     * Para tentar resolver algum erro ou implementar alguma funcionalidade!
     * Não colocarei de forma alguma algum tipo de controle de licensa!
     * Não irei criar ou trabalhar com nenhum tipo de interface visual, apenas scripts!
+
+  
 * Lembre-se isso é um trabalho / hobby voluntário, logo:
     * Sem promessa ou obrigação de o faze-lo.
     * Usarei meu tempo disponível e minha boa vontade do dia!
@@ -30,11 +28,17 @@
 <p align="center"><img alt="github_pix" src="imgs/github_pix.png"></p>
 <p align="center">Total doado R$ 10,00</p>
 
-Assistam os vídeos do canal
----------------------------
+***
+***
+<p align="center">
 
-[![IQ Coding](imgs/iq_coding.png)](https://bit.ly/2EgL0Mk)
+## Assistam os vídeos do canal
 
-Junte-se ao [grupo (IQ Coding) no telegram](https://bit.ly/3hMMcVE) , mas não esqueçam de ler as regras!
+</p>
 
-**Dica:** _Procure os ADM's caso tenha interesse nos grupos VIP's!_
+***
+***
+
+<p align="center"><a href="https://bit.ly/2EgL0Mk"><img alt="iq_coding" src="imgs/iq_coding.png"></a></p>
+<p align="center">Junte-se ao <a href="https://bit.ly/3hMMcVE">[grupo (IQ Coding) no telegram]</a>, mas não esqueçam de ler as regras!</p>
+<p align="center"><b>Dica:</b><i> Procure os ADM's caso tenha interesse nos grupos VIP's!</i></p>
