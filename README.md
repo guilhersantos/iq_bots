@@ -23,6 +23,12 @@
 <p align="center"><img alt="github_pix" src="imgs/github_pix.png"></p>
 <p align="center">Total doado R$ 10,00</p>
 
+***
+> ### _Arquivo com informações úteis:_
+>> - Como preparar o ambiente para execução dos BOTs: [preparando o ambiente](preparando_ambiente.md) !
+>> - BOT's disponíveis até o momento: [bot's disponíveis](bots/bots_disponiveis.md) !
+***
+
 ## Assistam os vídeos do canal
 
 <p align="center"><a href="https://bit.ly/2EgL0Mk"><img alt="iq_coding" src="imgs/iq_coding.png"></a></p>
