@@ -76,7 +76,7 @@ quantidade_martigale_executado = -1
 executar_martingale = False
 
 print('#:===============================================================:#')
-print(f'Executando estratégia MHI 1')
+print(f'Executando estratégia MHI 3')
 print(f"Data: {datetime.now().strftime('%Y-%m-%d %H:M')}")
 print(f'Pariedade: {pariedade}')
 print(f'Valor Entrada: {format_currency_value(currency_account, valor_entrada_incial)}')
@@ -107,8 +107,8 @@ def aguardar_horario_entrada(_iq: IQ_Option, _pariedade: str) -> list:
     print()
     while True:
         minutos = float(((datetime.now()).strftime('%M.%S'))[1:])
-        if (4.59 <= minutos <= 5) or minutos == 9.59:
-            return _iq.get_candles(_pariedade, 60, 3, time.time())
+        if (6.59 <= minutos <= 7) or minutos == 1.59:
+            return _iq.get_candles(_pariedade, 60, 3, time.time() - 120)
 
 
 def validar_estrategia(_candles: list) -> [bool, str]:
