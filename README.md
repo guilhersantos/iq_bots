@@ -1,11 +1,6 @@
 ## IQ_BOTs
 
-***
-***
-
 ## *Atenção, não siga em diante sem ler isso primeiro!!!
-***
-***
 
 * A partir de agora todo código que eu for começar a desenvolver eu irei disponibilizar aqui para todos 100% de grátis!
 
@@ -15,7 +10,7 @@
     * Não colocarei de forma alguma algum tipo de controle de licensa!
     * Não irei criar ou trabalhar com nenhum tipo de interface visual, apenas scripts!
 
-  
+
 * Lembre-se isso é um trabalho / hobby voluntário, logo:
     * Sem promessa ou obrigação de o faze-lo.
     * Usarei meu tempo disponível e minha boa vontade do dia!
@@ -28,16 +23,7 @@
 <p align="center"><img alt="github_pix" src="imgs/github_pix.png"></p>
 <p align="center">Total doado R$ 10,00</p>
 
-***
-***
-<p align="center">
-
 ## Assistam os vídeos do canal
-
-</p>
-
-***
-***
 
 <p align="center"><a href="https://bit.ly/2EgL0Mk"><img alt="iq_coding" src="imgs/iq_coding.png"></a></p>
 <p align="center">Junte-se ao <a href="https://bit.ly/3hMMcVE">[grupo (IQ Coding) no telegram]</a>, mas não esqueçam de ler as regras!</p>
