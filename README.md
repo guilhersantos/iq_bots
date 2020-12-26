@@ -19,8 +19,8 @@
 > Dito isso, somente irei aceitar que me enviem o código no privado [Telegram - @poolals](http://bit.ly/3h2C4ZU), mas podem ter certeza, caso eu julgue a ideia nova/boa/útil e que ajude os demais membros do grupo de qualquer forma, este será disponibilizado neste local, com ou sem permissão do mesmo!
 
 <p align="center">Se deu valor, doe se puder</p>
-<p align="center"><a href="http://bit.ly/3cdOSu2"><img alt="donate_paypal" src="imgs/donate_paypal.png"></a></p>
-<p align="center"><img alt="github_pix" src="imgs/github_pix.png"></p>
+<p align="center"><a href="http://bit.ly/3cdOSu2"><img alt="donate_paypal" src="imgs/donate_paypal.png" width="150px"></a></p>
+<p align="center"><img alt="github_pix" src="imgs/github_pix.png" width="125px"></p>
 <p align="center">Total doado R$ 10,00</p>
 
 ***
