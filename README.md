@@ -25,8 +25,8 @@
 
 ***
 > ### _Arquivo com informações úteis:_
->> - Como preparar o ambiente para execução dos BOTs: [preparando o ambiente](preparando_ambiente.md) !
->> - BOT's disponíveis até o momento: [bot's disponíveis](bots/bots_disponiveis.md) !
+>> - Como preparar o ambiente para execução dos BOTs: [preparando o ambiente](http://bit.ly/3nPyViV) !
+>> - BOT's disponíveis até o momento: [bot's disponíveis](http://bit.ly/3rwK6Ps) !
 ***
 
 ## Assistam os vídeos do canal
