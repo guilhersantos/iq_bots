@@ -41,13 +41,13 @@ def get_color_candle(_candle: dict) -> str:
 
 
 # Aqui você faz as configurações da sua conta IQ Opetion
-#:===============================================================:#
+# #:===============================================================:#
 login = 'COLOQUE AQUI SEU EMAIL IQ'
 password = 'COLOQUE AQUI SUA SENHA IQ'
 account_type = 'PRACTICE'
 
 # Aqui começa a configuração da API, não alterar
-#:===============================================================:#
+# #:===============================================================:#
 iq = IQ_Option(login, password)
 if not verificar_se_fez_a_conexao(iq, account_type):
     sys.exit(0)
@@ -60,13 +60,15 @@ print('#:===============================================================:#')
 print(f"This is your API version {IQ_Option.__version__}")
 print('#:===============================================================:#')
 print(f"Welcome: {login}")
-print(f"{'Practice account balance' if account_type == 'PRACTICE' else 'Real account balance'}: {format_currency_value(currency_account, account_balance)}")
-print('#:==============================================================:#')
+print(
+    f"{'Practice account balance' if account_type == 'PRACTICE' else 'Real account balance'}: "
+    f"{format_currency_value(currency_account, account_balance)}")
+print('#:===============================================================:#')
 
 # Aqui você faz as configurações do BOT
-#:===============================================================:#
-pariedades = ['EURUSD', 'AUDCAD']
-quantidade_dias = 3
+# #:===============================================================:#
+pariedades = ['EURUSD-OTC', 'AUDCAD-OTC']
+quantidade_dias = 15
 filtro_percentual = 80
 
 
@@ -93,8 +95,8 @@ def adjust_catalog(_pariedade: str, _candle: dict) -> dict:
 if quantidade_dias < 15:
     quantidade_dias = 15
 
-print(f"Baseada em {quantidade_dias} dias e separando probabilidades de {filtro_percentual}%")
 print("Iniciando a geração de lista de sinais, aguarde >>>>>>>>>>>>>>>")
+print(f"Baseada em {quantidade_dias} dias e separando probabilidades de {filtro_percentual}%")
 
 catalogacao = []
 for pariedade in pariedades:
@@ -137,13 +139,21 @@ new_df = sum_df[['pariedade', 'hora', 'green_percent', 'red_percent', 'doji_perc
 new_df = new_df.sort_values(by='hora')
 list_catalog = new_df.values.tolist()
 
-nome_do_arquivo = f"lista_sinais_{datetime.now().strftime('%Y_%m_%d')}.txt"
+data_uso_lista = datetime.now() - timedelta(days=-1)
+
+nome_do_arquivo = f"lista_sinais_{data_uso_lista.strftime('%Y_%m_%d')}.txt"
+pasta = "data/"
 sparador = ';'
-with open(nome_do_arquivo, 'a', encoding='utf-8') as file:
+
+with open(pasta + nome_do_arquivo, 'a', encoding='utf-8') as file:
     for item in list_catalog:
         if item[2] > filtro_percentual:
             file.write(item[0] + sparador + item[1] + sparador + 'CALL\n')
         if item[3] > filtro_percentual:
             file.write(item[0] + sparador + item[1] + sparador + 'PUT\n')
 
-print(f"Finalizando a geração de lista de sinais {nome_do_arquivo}")
+print(f"Finalizando a geração de lista de sinais >>>>>>>>>>>>>>>")
+print('#:===============================================================:#')
+print(f"Data de geração: {datetime.now().strftime('%Y-%m-%d %H:M')}")
+print(f"Data para utilização: {data_uso_lista.strftime('%Y-%m-%d')}")
+print('#:===============================================================:#')

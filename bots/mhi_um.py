@@ -9,6 +9,7 @@ from iqoptionapi.stable_api import IQ_Option
 def verificar_se_fez_a_conexao(_iq: IQ_Option, _account_type: str = 'PRACTICE') -> bool:
     check, reason = _iq.connect()
     error_password = """{"code":"invalid_credentials","message":"You entered the wrong credentials. Please check that the login/password is correct."}"""
+    requests_limit_exceeded = """{"code":"requests_limit_exceeded","message":"The number of requests has been exceeded. Try again in 10 minutes.","ttl":600}"""
     if check:
         print("Start your application")
         _iq.change_balance(_account_type)
@@ -18,6 +19,9 @@ def verificar_se_fez_a_conexao(_iq: IQ_Option, _account_type: str = 'PRACTICE') 
             print("No Network")
         elif reason == error_password:
             error_message = ast.literal_eval(error_password)
+            print(error_message['message'])
+        elif reason == requests_limit_exceeded:
+            error_message = ast.literal_eval(requests_limit_exceeded)
             print(error_message['message'])
 
     print("Finishing application, check your data and try again.")
@@ -33,7 +37,7 @@ def get_color_candle(_candle: dict) -> str:
 
 
 # Aqui você faz as configurações do BOT
-#:===============================================================:#
+# #:===============================================================:#
 valor_entrada_incial = 100
 stop_loss = 2000
 stop_win = 5000
@@ -42,13 +46,13 @@ pariedade = 'EURUSD'
 tipo_pariedade = 'DIGITAL'
 
 # Aqui você faz as configurações da sua conta IQ Opetion
-#:===============================================================:#
+# #:===============================================================:#
 login = 'COLOQUE AQUI SEU EMAIL IQ'
 password = 'COLOQUE AQUI SUA SENHA IQ'
 account_type = 'PRACTICE'
 
 # Aqui começa a configuração da API, não alterar
-#:===============================================================:#
+# #:===============================================================:#
 iq = IQ_Option(login, password)
 if not verificar_se_fez_a_conexao(iq, account_type):
     sys.exit(0)
@@ -60,11 +64,12 @@ print('#:===============================================================:#')
 print(f"This is your API version {IQ_Option.__version__}")
 print('#:===============================================================:#')
 print(f"Welcome: {login}")
-print(f"{'Practice account balance' if account_type == 'PRACTICE' else 'Real account balance'}: {format_currency_value(currency_account, account_balance)}")
-print('#:==============================================================:#')
+print(
+    f"{'Practice account balance' if account_type == 'PRACTICE' else 'Real account balance'}: {format_currency_value(currency_account, account_balance)}")
+print('#:===============================================================:#')
 
 # Variáveis de controle do BOT, não alterar
-#:===============================================================:#
+# #:===============================================================:#
 lucro_atual = 0
 valor_entrada_atual = valor_entrada_incial
 quantidade_martigale_executado = -1
@@ -79,7 +84,8 @@ print(f'Maximo Marigales: {quantidade_martigale}')
 print('#:===============================================================:#')
 
 
-def verificar_stops(_stop_loss: float, _stop_win: float, _lucro_atual: float, _valor_entrada_atual: float, _show_message: bool = True) -> bool:
+def verificar_stops(_stop_loss: float, _stop_win: float, _lucro_atual: float, _valor_entrada_atual: float,
+                    _show_message: bool = True) -> bool:
     if _lucro_atual >= _stop_win:
         if _show_message:
             print(f'Stop Win atingido!')
@@ -115,7 +121,8 @@ def validar_estrategia(_candles: list) -> [bool, str]:
         return True, 'CALL'
 
 
-def executar_entrada(_iq: IQ_Option, _pariedade: str, _tipo_pariedade: str, _direcao: str, _valor_entrada_atual: float, _quantidade_martigale_executado: int) -> [str, float]:
+def executar_entrada(_iq: IQ_Option, _pariedade: str, _tipo_pariedade: str, _direcao: str, _valor_entrada_atual: float,
+                     _quantidade_martigale_executado: int) -> [str, float]:
     status, order_id = _iq.buy_digital_spot(_pariedade, _valor_entrada_atual, _direcao.upper(), 1) \
         if _tipo_pariedade.upper() == 'DIGITAL' else _iq.buy(_valor_entrada_atual, _pariedade, _direcao.upper(), 1)
 
@@ -132,7 +139,8 @@ def executar_entrada(_iq: IQ_Option, _pariedade: str, _tipo_pariedade: str, _dir
     if status:
         print(f">>>>>>>>>>>>>>> Aguardando resultado da operação")
         while True:
-            status, reusltado = _iq.check_win_digital_v2(order_id) if _tipo_pariedade.upper() == 'DIGITAL' else _iq.check_win_v4(order_id)
+            status, reusltado = _iq.check_win_digital_v2(
+                order_id) if _tipo_pariedade.upper() == 'DIGITAL' else _iq.check_win_v4(order_id)
             if status:
                 if reusltado > 0:
                     return 'WIN', float(reusltado)
@@ -152,16 +160,19 @@ while not verificar_stops(stop_loss, stop_win, lucro_atual, valor_entrada_atual)
         while True:
 
             if quantidade_martigale > quantidade_martigale_executado:
-                resultado, valor = executar_entrada(iq, pariedade, tipo_pariedade, direcao, valor_entrada_atual, quantidade_martigale_executado)
+                resultado, valor = executar_entrada(iq, pariedade, tipo_pariedade, direcao, valor_entrada_atual,
+                                                    quantidade_martigale_executado)
 
                 if resultado == 'LOSS':
                     lucro_atual -= valor
-                    print(f">>>>>>>>>>>>>>> Resulatdo da operação foi LOSS, lucro até o momento {format_currency_value(currency_account, lucro_atual)}")
+                    print(
+                        f">>>>>>>>>>>>>>> Resulatdo da operação foi LOSS, lucro até o momento {format_currency_value(currency_account, lucro_atual)}")
                     quantidade_martigale_executado += 1
                     valor_entrada_atual = valor_entrada_atual * 2
                 else:
                     lucro_atual += valor
-                    print(f">>>>>>>>>>>>>>> Resulatdo da operação foi WIN, lucro até o momento {format_currency_value(currency_account, lucro_atual)}")
+                    print(
+                        f">>>>>>>>>>>>>>> Resulatdo da operação foi WIN, lucro até o momento {format_currency_value(currency_account, lucro_atual)}")
                     valor_entrada_atual = valor_entrada_incial
                     quantidade_martigale_executado = -1
                     break
