@@ -1,4 +1,5 @@
 import ast
+import os
 import sys
 import time
 from datetime import datetime, timedelta
@@ -142,10 +143,14 @@ list_catalog = new_df.values.tolist()
 data_uso_lista = datetime.now() - timedelta(days=-1)
 
 nome_do_arquivo = f"lista_sinais_{data_uso_lista.strftime('%Y_%m_%d')}.txt"
-pasta = "data/"
+
+directory = "data/"
+if not os.path.exists(directory):
+    os.makedirs(directory)
+
 sparador = ';'
 
-with open(pasta + nome_do_arquivo, 'a', encoding='utf-8') as file:
+with open(directory + nome_do_arquivo, 'a', encoding='utf-8') as file:
     for item in list_catalog:
         if item[2] > filtro_percentual:
             file.write(item[0] + sparador + item[1] + sparador + 'CALL\n')
