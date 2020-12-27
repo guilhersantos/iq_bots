@@ -27,15 +27,7 @@
 > ### _Arquivo com informações úteis:_
 >> - Como preparar o ambiente para execução dos BOTs: [preparando o ambiente](http://bit.ly/3nPyViV) !
 >> - BOT's disponíveis até o momento: [bot's disponíveis](http://bit.ly/3rwK6Ps) !
-***
 
-## Assistam os vídeos do canal
-
-<p align="center"><a href="https://bit.ly/2EgL0Mk"><img alt="iq_coding" src="imgs/iq_coding.png"></a></p>
-<p align="center">Junte-se ao <a href="https://bit.ly/3hMMcVE">[grupo (IQ Coding) no telegram]</a>, mas não esqueçam de ler as regras!</p>
-<p align="center"><b>Dica:</b><i> Procure os ADM's caso tenha interesse nos grupos VIP's!</i></p>
-
-***
 ***
 ***
 
