@@ -1,7 +1,6 @@
 # Aqui estarão os status de cada BOT a ser desenvolvido.
 
 > Serão desenvolvidas as ESTRATÉGIAS DE QUADRANTES</br>
-> Pdf existente nos arquivos do [grupo (IQ Coding) no telegram](https://bit.ly/3hMMcVE).
 
 ---
 ---
