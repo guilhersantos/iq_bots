@@ -39,4 +39,4 @@
 ***
 ***
 
-# Atenção, não tenho nenhum vínculo junto a corretora IQ Option, não encorajo nem indico operações binárias de qualquer forma, seja ela manualmente ou com utlização de robos, o risco de perda financeira é extremamente alto, tenha muito cuidado.
+# Atenção, não tenho nenhum vínculo junto a corretora IQ Option, não encorajo nem indico operações binárias de qualquer forma, seja ela manualmente ou com utlização de robôs, o risco de PERDA financeira é extremamente alto, tenha muito cuidado.
