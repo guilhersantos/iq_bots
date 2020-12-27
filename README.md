@@ -34,3 +34,9 @@
 <p align="center"><a href="https://bit.ly/2EgL0Mk"><img alt="iq_coding" src="imgs/iq_coding.png"></a></p>
 <p align="center">Junte-se ao <a href="https://bit.ly/3hMMcVE">[grupo (IQ Coding) no telegram]</a>, mas não esqueçam de ler as regras!</p>
 <p align="center"><b>Dica:</b><i> Procure os ADM's caso tenha interesse nos grupos VIP's!</i></p>
+
+***
+***
+***
+
+# Atenção, não tenho nenhum vínculo junto a corretora IQ Option, não encorajo nem indico operações binárias de qualquer forma, seja ela manualmente ou com utlização de robos, o risco de perda financeira é extremamente alto, tenha muito cuidado.
