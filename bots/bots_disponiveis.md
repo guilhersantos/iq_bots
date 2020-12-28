@@ -18,11 +18,14 @@ pip install -r requirements.txt
 
 ## 1 - *Estratégias MHI*
 
-| Nome                      | Status                                    | Timeframe   | Funcionalidades                                               | Versão   | Ultima alteração |
-|:--------------------------|:------------------------------------------|:-----------:| ------------------------------------------------------------- | :------: | :--------------: |
-| [MHI UM](bots_mhi.md)     | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 25/12/2020       |
-| [MHI DOIS](bots_mhi.md)   | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
-| [MHI TRES](bots_mhi.md)   | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
+| Nome                              | Status                                    | Timeframe   | Funcionalidades                                               | Versão   | Ultima alteração |
+|:----------------------------------|:------------------------------------------|:-----------:| ------------------------------------------------------------- | :------: | :--------------: |
+| [MHI UM MINORIA](bots_mhi.md)     | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 25/12/2020       |
+| [MHI DOIS MINORIA](bots_mhi.md)   | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
+| [MHI TRES MINORIA](bots_mhi.md)   | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
+| [MHI UM MAIORIA](bots_mhi.md)     | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
+| [MHI DOIS MANORIA](bots_mhi.md)   | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
+| [MHI TRES MAIORIA](bots_mhi.md)   | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
 
 ***
 ***
