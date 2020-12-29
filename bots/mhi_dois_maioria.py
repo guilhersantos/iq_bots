@@ -76,7 +76,7 @@ quantidade_martigale_executado = -1
 executar_martingale = False
 
 print('#:===============================================================:#')
-print(f'Executando estratégia MHI 2')
+print(f'Executando estratégia MHI 2 MAIORIA')
 print(f"Data: {datetime.now().strftime('%Y-%m-%d %H:M')}")
 print(f'Pariedade: {pariedade}')
 print(f'Valor Entrada: {format_currency_value(currency_account, valor_entrada_incial)}')
