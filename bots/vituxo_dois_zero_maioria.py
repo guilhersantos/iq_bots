@@ -115,8 +115,6 @@ def validar_estrategia(_candles: list) -> [bool, str]:
     print('>>>>>>>>>>>>>>> Validando estratégia', end='\r')
     print()
     cores = get_color_candle(_candles[0]) + get_color_candle(_candles[1]) + get_color_candle(_candles[2])
-    print(candles)
-    print(cores)
     if cores.count('D'):
         return False, "None"
     elif cores.count('G') > cores.count('R'):
