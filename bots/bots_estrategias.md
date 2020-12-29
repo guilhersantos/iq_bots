@@ -188,10 +188,10 @@ ___** Use até 2 martingales nas velas seguintes a vela de entrada.___<br/>
 
 #### - Descrição
 ```
-Quadrante Analise   |        Entrada 
-                    |          ||
- 1   2   3   4   5  |          \/
-███ ███ ███ ███ ███ | ███ ███ ████
+Quadrante Analise   | Entrada 
+                    |  ||
+ 1   2   3   4   5  |  \/
+███ ███ ███ ███ ███ | ████
 ```
 
 Olhar as 5 primeiras velas do quadrante de analise e ver qual cor de candle esta em maioria.<br/>
@@ -209,10 +209,10 @@ ___** Use até 2 martingales nas velas seguintes a vela de entrada.___<br/>
 
 #### - Descrição
 ```
-Quadrante Analise   |        Entrada 
-                    |          ||
- 1   2   3   4   5  |          \/
-███ ███ ███ ███ ███ | ███ ███ ████
+Quadrante Analise   | Entrada 
+                    |  ||
+ 1   2   3   4   5  |  \/
+███ ███ ███ ███ ███ | ████
 ```
 
 Olhar as 5 primeiras velas do quadrante de analise e ver qual cor de candle esta em minoria.<br/>
