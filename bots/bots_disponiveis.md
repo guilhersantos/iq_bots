@@ -18,14 +18,25 @@ pip install -r requirements.txt
 
 ## 1 - *Estratégias*
 
-| Nome                                                     | Status                                    | Timeframe   | Funcionalidades                                               | Versão   | Ultima alteração |
-|:---------------------------------------------------------|:------------------------------------------|:-----------:| ------------------------------------------------------------- | :------: | :--------------: |
-| [MHI UM MINORIA](bots_estrategias.md#mhi-um-minoria)     | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 25/12/2020       |
-| [MHI DOIS MINORIA](bots_estrategias.md#mhi-dois-minoria) | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
-| [MHI TRES MINORIA](bots_estrategias.md#mhi-tres-minoria) | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
-| [MHI UM MAIORIA](bots_estrategias.md#mhi-um-maioria)     | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
-| [MHI DOIS MANORIA](bots_estrategias.md#mhi-dois-maioria) | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
-| [MHI TRES MAIORIA](bots_estrategias.md#mhi-tres-maioria) | Liberado, aguardando feedback de testes   | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
+| Nome                                                         | Status                                  | Timeframe   | Funcionalidades                                               | Versão   | Ultima alteração |
+|:-------------------------------------------------------------|:----------------------------------------|:-----------:| ------------------------------------------------------------- | :------: | :--------------: |
+| [MHI 1 MINORIA](bots_estrategias.md#mhi-um-minoria)          | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 25/12/2020       |
+| [MHI 2 MINORIA](bots_estrategias.md#mhi-dois-minoria)        | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
+| [MHI 3 MINORIA](bots_estrategias.md#mhi-tres-minoria)        | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 26/12/2020       |
+| [MHI 1 MAIORIA](bots_estrategias.md#mhi-um-maioria)          | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
+| [MHI 2 MANORIA](bots_estrategias.md#mhi-dois-maioria)        | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
+| [MHI 3 MAIORIA](bots_estrategias.md#mhi-tres-maioria)        | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 28/12/2020       |
+| [VITUXO 2.0 MAIORIA](bots_estrategias.md#vituxo-2_0-maioria) | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 29/12/2020       |
+| [VITUXO 2.0 MINORIA](bots_estrategias.md#vituxo-2-0-minoria) | Liberado, aguardando feedback de testes | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      | 29/12/2020       |
+| [C3](bots_estrategias.md#mhi-tres-maioria)                   |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+| [M.S.F](bots_estrategias.md#mhi-tres-maioria)                |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+| [MILHÃO MAIORIA](bots_estrategias.md#mhi-tres-maioria)       |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+| [MILHÃO MINORIA](bots_estrategias.md#mhi-tres-maioria)       |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+| [3 VISINHOS](bots_estrategias.md#mhi-tres-maioria)           |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+| [DAKA](bots_estrategias.md#mhi-tres-maioria)                 |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+| [PADRÂO 23](bots_estrategias.md#mhi-tres-maioria)            |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+| [R7](bots_estrategias.md#mhi-tres-maioria)                   |                                         | M1          | Configurações no código, Martingale, Stop Loss, Stop Win      | 1.0      |                  |
+
 ***
 ***
 
